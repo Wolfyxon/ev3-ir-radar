@@ -10,7 +10,7 @@ fn main() -> Ev3Result<()> {
     ir.set_mode_ir_prox().unwrap();
 
     motor.set_position(180).unwrap();
-    motor.set_speed_sp(100).unwrap();
+    motor.set_speed_sp(150).unwrap();
 
     loop { 
         let rot = motor.get_position().unwrap();
